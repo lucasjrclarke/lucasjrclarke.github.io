@@ -13,13 +13,31 @@ const intersData = {
                 "siteLink": "",
                 "navLink": "",
                 "coverImage": "",
-                "heroImage": "",
+                "heroImage": "ohonua-1.png",
                 "gallery": [],
                 "galleryDescription": "",
                 "knowledge": ["A skill", "A skill"],
                 "story": "",
                 "storyImages": [],
                 "software": [8, 9, 10, 13, 14, 16]
+            },
+            {
+                "id": 2,
+                "categoryIds": [3, 99],
+                "shortTitle": "Filmmaking",
+                "longTitle": "University-level cinematography and acting",
+                "shortDescription": "My 'breadth' track at university, taking on cinematography as an alternative endeavour.",
+                "description": "Across the three years at Melbourne University, I completed the 'Making Movies' breadth track as part of my studies. This course involved learning the filmmaking process and art, materialising in a final week-long intensive where I was given the opportunity to direct, film and act in a professional studio environment and help create two short films.",
+                "siteLink": "",
+                "navLink": "",
+                "coverImage": "",
+                "heroImage": "making-movies-1.png",
+                "gallery": [],
+                "galleryDescription": "",
+                "knowledge": ["A skill", "A skill"],
+                "story": "",
+                "storyImages": [],
+                "software": []
             },
         ]
     }

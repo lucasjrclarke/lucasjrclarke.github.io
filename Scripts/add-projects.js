@@ -49,6 +49,10 @@ for (var s = 0; s < sectionsDiv.length; s++) {
 
         // Create the horizontal line element
         var horizontalLine = document.createElement('div');
+
+        if (s === 0 && i === dataSingle.length - 1) {
+            horizontalLine.id = 'skills-bar';
+        }
         horizontalLine.className = 'horizontal-line';
 
         // Create the overarching div

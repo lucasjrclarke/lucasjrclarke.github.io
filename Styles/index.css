@@ -219,6 +219,24 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 768px) {
+    #main {
+        margin: 6em 2em 4em;
+    }
+
+    #grid {
+        margin-left: -2em;
+    }
+
+    #grid .vertical-line {
+        margin: 0 1em 0 0.5em;
+    }
+
+
+    #grid>h5 {
+        text-align: start;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 
     #main>#intro {
         grid-template-columns: 100%;
@@ -235,4 +253,6 @@ input:checked+.slider:before {
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
     }
+
+
 }

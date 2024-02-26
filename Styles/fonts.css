@@ -33,6 +33,11 @@ li {
     font-family: var(--font-body);
 }
 
+a {
+    color: var(--text-color-default);
+    text-decoration: none;
+}
+
 .text--bold {
     font-weight: 500;
 }
