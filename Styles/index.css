@@ -211,6 +211,13 @@ input:checked+.slider:before {
     background-color: var(--black);
 }
 
+/* socials */
+#socials {
+    margin-top: 0.5em;
+
+}
+
+
 /* breakpoints */
 @media only screen and (min-width: 1200px) {
     #grid .horizontal-line {
