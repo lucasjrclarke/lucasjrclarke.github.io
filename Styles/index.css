@@ -217,6 +217,28 @@ input:checked+.slider:before {
 
 }
 
+/* footer */
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em 2em;
+}
+
+.footer-col:first-of-type {
+    width: 20rem;
+    text-align: left;
+}
+
+.footer-col {
+    padding: 0 2em 2em;
+    width: 15rem;
+}
+
+.footer-col {
+    text-align: center;
+}
 
 /* breakpoints */
 @media only screen and (min-width: 1200px) {
