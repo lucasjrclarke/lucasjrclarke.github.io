@@ -4,6 +4,7 @@ const intersData = {
     "data": {
         "inters": [
             {
+                "project_id": 6,
                 "id": 1,
                 "categoryIds": [1, 99],
                 "shortTitle": "Ohonua",
@@ -22,6 +23,7 @@ const intersData = {
                 "software": [8, 9, 10, 13, 14, 16]
             },
             {
+                "project_id": 7,
                 "id": 2,
                 "categoryIds": [3, 99],
                 "shortTitle": "Filmmaking",

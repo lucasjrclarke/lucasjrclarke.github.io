@@ -4,6 +4,7 @@ const projectsData = {
     "data": {
         "projects": [
             {
+                "project_id": 1,
                 "id": 1,
                 "categoryIds": [1, 99],
                 "shortTitle": "JZMotors",
@@ -22,6 +23,7 @@ const projectsData = {
                 "software": [8, 9, 10, 13, 14, 16]
             },
             {
+                "project_id": 2,
                 "id": 2,
                 "categoryIds": [1, 4, 99],
                 "shortTitle": "Zooper Zoo",
@@ -40,6 +42,7 @@ const projectsData = {
                 "software": [4, 8, 9, 14, 15]
             },
             {
+                "project_id": 3,
                 "id": 3,
                 "categoryIds": [1],
                 "shortTitle": "KANVAS",
@@ -57,6 +60,7 @@ const projectsData = {
                 "software": []
             },
             {
+                "project_id": 4,
                 "id": 4,
                 "categoryIds": [1],
                 "shortTitle": "WellnessWizard",
@@ -74,6 +78,7 @@ const projectsData = {
                 "software": []
             },
             {
+                "project_id": 5,
                 "id": 5,
                 "categoryIds": [1],
                 "shortTitle": "Footprints",

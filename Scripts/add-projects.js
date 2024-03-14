@@ -1,5 +1,6 @@
 import projectsData from "../Data/projects.js";
 import intersData from "../Data/inter.js";
+import { openPopup, closePopup } from '../Scripts/project-popup.js';
 const pjData = projectsData.data.projects
 const inData = intersData.data.inters
 
@@ -9,20 +10,20 @@ const intersDiv = document.getElementById('inters');
 const sectionsDiv = [projectsDiv, intersDiv];
 const sectionsData = [pjData, inData];
 
-for (var s = 0; s < sectionsDiv.length; s++) {
-    var sectionSingle = sectionsDiv[s];
-    var dataSingle = sectionsData[s];
+for (let s = 0; s < sectionsDiv.length; s++) {
+    let sectionSingle = sectionsDiv[s];
+    let dataSingle = sectionsData[s];
 
-    for (var i = 0; i < dataSingle.length; i++) {
-        var pjSingle = dataSingle[i];
+    for (let i = 0; i < dataSingle.length; i++) {
+        let pjSingle = dataSingle[i];
         // Create the text
-        var projectText = document.createElement('div');
+        let projectText = document.createElement('div');
         projectText.className = 'project--text';
         projectText.innerHTML = '<h5>' + pjSingle.shortTitle + '</h5> <p>' +
             pjSingle.description + '</p>';
 
         // Create the image
-        var image = document.createElement('img');
+        let image = document.createElement('img');
         if (pjSingle.heroImage == "") {
             image.src = '/Images/tv-static.png'
         } else {
@@ -35,12 +36,13 @@ for (var s = 0; s < sectionsDiv.length; s++) {
         image.alt = 'A tv displaying ' + pjSingle.shortDescription;
 
         // Create the image container
-        var projectImage = document.createElement('div');
+        let projectImage = document.createElement('div');
+        projectImage.onclick = function () { openPopup(pjSingle.project_id) };
         projectImage.className = 'project--image';
         projectImage.appendChild(image);
 
         // Create the main container element
-        var projectContent = document.createElement('div');
+        let projectContent = document.createElement('div');
         projectContent.className = 'project--content';
 
         // Append the content
@@ -48,7 +50,7 @@ for (var s = 0; s < sectionsDiv.length; s++) {
         projectContent.appendChild(projectImage);
 
         // Create the horizontal line element
-        var horizontalLine = document.createElement('div');
+        let horizontalLine = document.createElement('div');
 
         if (s === 0 && i === dataSingle.length - 1) {
             horizontalLine.id = 'skills-bar';
@@ -56,7 +58,7 @@ for (var s = 0; s < sectionsDiv.length; s++) {
         horizontalLine.className = 'horizontal-line';
 
         // Create the overarching div
-        var projectDiv = document.createElement('div');
+        let projectDiv = document.createElement('div');
         projectDiv.className = 'project';
 
         // Append the content to the overarching div
@@ -66,5 +68,4 @@ for (var s = 0; s < sectionsDiv.length; s++) {
         // Append this one to the section
         sectionSingle.appendChild(projectDiv);
     }
-    i = 0;
 }
