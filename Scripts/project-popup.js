@@ -26,6 +26,7 @@ export function openPopup(project_id) {
     // create close link 
     let projectPopupCloser = document.createElement('a');
     projectPopupCloser.className = "project--popup--x";
+    projectPopupCloser.innerHTML = "x";
     projectPopupCloser.onclick = function () { closePopup() };
 
     // create title
@@ -47,7 +48,9 @@ export function openPopup(project_id) {
 }
 
 export function closePopup() {
-
+    console.log(popup_id);
+    let projectToClose = document.getElementById("project--popup");
+    document.getElementById("popup").removeChild(projectToClose);
     popup_id = -1;
 
 }

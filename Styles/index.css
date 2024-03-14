@@ -166,6 +166,33 @@ input:checked+.slider:before {
     max-width: 200px;
 }
 
+/* project popup */
+#project--popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.project--popup--x {
+    font-family: var(--font-icons);
+    font-size: xxx-large;
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0.25em 0.5em;
+}
+
+.project--popup--title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+
 /* skills */
 #skills--grid {
     display: flex;

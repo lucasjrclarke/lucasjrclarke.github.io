@@ -2,6 +2,7 @@
     /* font declarations */
     --font-heading: 'IBM Plex Mono', serif;
     --font-body: 'IBM Plex Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-icons: 'Courier New', system-ui, Courier, monospace;
 
     /* type scale */
     --text-scale-ratio: 1.1;
@@ -34,8 +35,10 @@ li {
 }
 
 a {
+    font-family: var(--font-body);
     color: var(--text-color-default);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .text--bold {
