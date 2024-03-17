@@ -6,6 +6,43 @@ body {
     max-width: 100%;
 }
 
+/* defaults */
+
+.blocked {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+.button {
+    background-color: var(--black);
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+
+}
+
+.button>p {
+    color: var(--white);
+    user-select: none;
+}
+
+.button:hover {
+    scale: 1.01;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 2px solid var(--black);
+}
+
+.button:hover>p {
+    color: var(--black);
+}
+
+.slide-hidden {
+    display: none;
+    visibility: hidden;
+}
+
 /* HEADER */
 
 .text--circled {
@@ -175,6 +212,8 @@ input:checked+.slider:before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .project--popup--x {
@@ -191,6 +230,48 @@ input:checked+.slider:before {
     display: flex;
     justify-content: center;
     margin-top: 10em;
+}
+
+.project--popup--tv,
+.project--popup--tv--image,
+.slideshow-image {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -6em;
+    max-width: 872px;
+    width: 80vw;
+}
+
+.project--popup--tv--image {
+    z-index: -1;
+}
+
+.project--button {
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-buttons {
+    z-index: 1;
+    position: fixed;
+    bottom: 4.5em;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-button {
+    padding: 0.25em 1em;
+    margin: 0.25em;
+    user-select: none;
 }
 
 /* skills */
