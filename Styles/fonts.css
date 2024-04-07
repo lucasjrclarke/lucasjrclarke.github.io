@@ -1,0 +1,59 @@
+:root {
+    /* font declarations */
+    --font-heading: 'IBM Plex Mono', serif;
+    --font-body: 'IBM Plex Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-icons: 'Courier New', system-ui, Courier, monospace;
+
+    /* type scale */
+    --text-scale-ratio: 1.1;
+    --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-s: calc(1rem / var(--text-scale-ratio));
+    --text-m: calc(1rem * var(--text-scale-ratio));
+    --text-l: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--text-color-default);
+    font-family: var(--font-heading);
+}
+
+h5 {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+p,
+li {
+    color: var(--text-color-default);
+    font-family: var(--font-body);
+}
+
+a {
+    font-family: var(--font-body);
+    color: var(--text-color-default);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text--bold {
+    font-weight: 500;
+}
+
+.text--light {
+    color: var(--white);
+}
+
+.text--dark {
+    color: var(--black);
+}
+
+.text--links:hover {
+    color: var(--links);
+    text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/colours.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/header.css" />
+    <script src="Scripts/switch-mode.js"></script>
+    <script src="Scripts/logic.js"></script>
+    <script type="module" src="Scripts/add-projects.js"></script>
+    <script type="module" src="Scripts/add-skills.js"></script>
+    <title>Lucas Clarke</title>
+</head>
+
+<div id="popup"></div>
+
+<body id="body">
+    <div id="header">
+        <div id="header--bar">
+            <div id="header--bar--left">
+                <p class="text--bold">lucas clarke</p>
+                <div id="socials">
+                    <a class="icon img--links"><img src="/Icons/black-instagram-icon.svg" alt="Instagram"></a>
+                    <a class="icon img--links"><img src="/Icons/youtube-icon.svg" alt="Youtube"></a>
+                    <a class="icon img--links"><img src="/Icons/linkedin-square-icon.svg" alt="Linkedin"></a>
+                </div>
+            </div>
+            <div id="header--bar--right">
+                <div id="header--bar--right--container">
+                    <div id="colour-toggle">
+                        <img class="icon" src="Icons/sun-warm-icon.svg" alt="Light mode">
+                        <label class="switch">
+                            <input id="mode-switch" type="checkbox" onClick="changeMode()">
+                            <span class="slider round"></span>
+                        </label>
+                        <img class="icon" src="Icons/moon-icon.svg" alt="Dark mode">
+                    </div>
+                    <div id="header--nav">
+                        <ul>
+                            <li class="text--links"><a href="#">about me</a></li>
+                            <li class="text--links"><a href="#grid">work</a></li>
+                            <li class="text--links"><a href="#skills-bar">skills</a></li>
+                            <li class="text--circled">
+                                <p class="text--links"><a href="https://www.linkedin.com/in/lucas-clarke-7a7427268/"
+                                        target="_blank">resume</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="intro">
+            <p>Hi! My name is Lucas Clarke and I am a 21-year-old student graduate of The University of Melbourne
+                majoring in User Experience Design. I have a passion for design, and enjoy integrating it both visually
+                and logically by designing and developing solutions.<br><br>
+
+                When I’m not learning, I also am a filmmaker, and play soccer. At university, I endeavoured in
+                cinematography, urban planning, graphic design, finance, marketing
+                and computer science, all of which I’ve highlighted below.<br><br>
+
+                Thank you for visiting my website!<br>
+
+                - Lucas
+            </p>
+            <img src="/Images/ibm-poster-3.png" alt="Colourful edit of myself on a computer screen">
+        </div>
+        <div id="grid">
+            <h5>work</h5>
+            <div class="vertical-line"></div>
+            <div id="projects"></div>
+            <h5 id="skills-title">skills</h5>
+            <div class="vertical-line"></div>
+            <div id="skills"></div>
+            <h5>hobbies</h5>
+            <div class="vertical-line"></div>
+            <div id="inters"></div>
+            <h5>socials</h5>
+            <div class="vertical-line"></div>
+            <div id="socials">
+                <behold-widget feed-id="AoYeAud4qWXNIy18Ytg4"></behold-widget>
+                <script>
+                    if ('noModule' in HTMLScriptElement.prototype) {
+                        const d = document, s = d.createElement('script'); s.type = 'module';
+                        s.src = 'https://w.behold.so/widget.js'; d.body.appendChild(s);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-col">
+            <p>Website build from scratch by Lucas Clarke</p>
+        </div>
+        <div class="footer-col">
+            <p>Contact me at
+            <p class="text--bold">ljrclarke17@gmail.com</p>
+            </p>
+        </div>
+        <div class="footer-col">
+            <p>Copyright 2024</p>
+        </div>
+    </div>
+</body>
+
+</html>

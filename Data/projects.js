@@ -1,0 +1,102 @@
+/* note: 99 is the code for a featured project */
+const projectsData = {
+    "success": true,
+    "data": {
+        "projects": [
+            {
+                "project_id": 1,
+                "id": 1,
+                "categoryIds": [1, 99],
+                "shortTitle": "JZMotors",
+                "longTitle": "The 'JZMotors' Redesign",
+                "shortDescription": "A front-end redesign for a local business",
+                "description": "In my second year of university, I was tasked with the complete redesign of a local business' website, creating a multimodal solution while following and documenting standard design process.",
+                "siteLink": "https://lucasjrclarke.github.io/wongawizards/",
+                "navLink": "",
+                "coverImage": "",
+                "heroImage": "jzmotors-1.png",
+                "gallery": [],
+                "galleryDescription": "",
+                "knowledge": ["A skill", "A skill"],
+                "story": "",
+                "storyImages": [],
+                "software": [8, 9, 10, 13, 14, 16]
+            },
+            {
+                "project_id": 2,
+                "id": 2,
+                "categoryIds": [1, 4, 99],
+                "shortTitle": "Zooper Zoo",
+                "longTitle": "The creation of the 'Zooper Zoo' Boardgame",
+                "shortDescription": "The team development of a Euro-style boardgame",
+                "description": "A group project to create a 'Euro-style' boardgame which provided a unique educational take on evaluating the needs, preferences and motivations of a target audience, and direction on how to apply and test design principles to create a meaningful, engaging experience for users.",
+                "siteLink": null,
+                "navLink": null,
+                "coverImage": "/src/assets/300ppi/ZOOGAME-blob.png",
+                "heroImage": "zooper-zoo-1.png",
+                "gallery": ["/src/assets/zooper-zoo-sell-sheet.png", "/src/assets/zoogame-board-game-setup.png", "/src/assets/ZOOGAME2.3.png", "/src/assets/ZOOGAME3.2.png", "/src/assets/ZOOGAME3.5.png", "/src/assets/ZOOGAME3.8.png", "/src/assets/ZOOGAME4.2.png"],
+                "galleryDescription": "The many visual assets designed for the board game, and the iterations that I created before arriving at the final board.",
+                "knowledge": ["A skill", "A skill"],
+                "story": "Here is where I put the story explaining how this project was developed. It can be quite long and it is essentially explaining the process, what I did, what it taught me etc.",
+                "storyImages": [],
+                "software": [4, 8, 9, 14, 15]
+            },
+            {
+                "project_id": 3,
+                "id": 3,
+                "categoryIds": [1],
+                "shortTitle": "KANVAS",
+                "longTitle": "KANVAS - a student/teacher extension request plug-in",
+                "description": "One of my degree's two capstone projects: the development of a new, fully integrated solution for submitting and managing extension requests, with Melbourne University as a client. My role within the team was our front-end lead, product owner and front-end developer. This project was my first true experience managing a large-scale project using the AGILE model and similar tools, which all successfully materialised into a fully-functional Canvas-integrated tool.",
+                "siteLink": null,
+                "navLink": "",
+                "coverImage": "",
+                "heroImage": "kanvas-1.png",
+                "gallery": ["kanvas-1.png", "wellness-wizard-2.png", "footprints-1.png"],
+                "galleryDescription": "",
+                "knowledge": ["A skill", "A skill"],
+                "story": "",
+                "storyImages": [],
+                "software": []
+            },
+            {
+                "project_id": 4,
+                "id": 4,
+                "categoryIds": [1],
+                "shortTitle": "WellnessWizard",
+                "longTitle": "WellnessWizard - the healthcare application",
+                "description": "My degree's more design-oriented capstone project, WellnessWizard, involved the creation of a interactive prototype-concept using Figma, collaborating to propose a healthcare application with a conversational, AI-oriented twist. This project highlighted the creativity and prior information needed when delving into unknown territory.",
+                "siteLink": null,
+                "navLink": "",
+                "coverImage": "",
+                "heroImage": "wellness-wizard-2.png",
+                "gallery": [],
+                "galleryDescription": "",
+                "knowledge": ["A skill", "A skill"],
+                "story": "",
+                "storyImages": [],
+                "software": []
+            },
+            {
+                "project_id": 5,
+                "id": 5,
+                "categoryIds": [1],
+                "shortTitle": "Footprints",
+                "longTitle": "Footprints - A wearable interactive to promote sustainability in a interconnected city",
+                "description": "Footprints was one of the most enjoyable projects of my university, tasking our team with creating a wearable technology to promote a sustainable future. Our creation, Footprints, was a pair of shoes with the goal of inspiring people to exercise through novel, algorithmically-randomised navigation based on user-provided parameters. Many design challenges appeared, such as how users would interact with their feet, how the shoes would be powered and how the shoes could communicate information to the user.",
+                "siteLink": null,
+                "navLink": "",
+                "coverImage": "",
+                "heroImage": "footprints-1.png",
+                "gallery": [],
+                "galleryDescription": "",
+                "knowledge": ["A skill", "A skill"],
+                "story": "",
+                "storyImages": [],
+                "software": []
+            },
+        ]
+    }
+};
+
+export default projectsData;

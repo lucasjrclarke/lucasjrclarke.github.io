@@ -1,0 +1,29 @@
+:root {
+    --primary: #5370FA;
+    --secondary: #E1373B;
+    --tertiary: #FAD35C;
+    --black: #000000;
+    --white: #FFFDF8;
+    --links: #6267c4;
+
+    /* text colours */
+    --text-color-default: var(--black);
+    --text-color-alt: var(--white);
+    --text-color-light: var(--tertiary);
+    --text-color-dark: var(--secondary);
+    --text-color-contrast: var(--primary);
+
+}
+
+body {
+    background-color: var(--white);
+}
+
+.text--links:hover {
+    color: var(--links);
+    cursor: crosshair;
+}
+
+.img--links img:hover {
+    filter: invert(43%) sepia(13%) saturate(2403%) hue-rotate(199deg) brightness(93%) contrast(87%);
+}
